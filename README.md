@@ -135,7 +135,7 @@ bundle install
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Andy MEnutti**
+👤 **ANDY MENUTTI**
 
 - GitHub: [@andym80](https://github.com/andym80)
 - LinkedIn: [Andres Menutti](https://linkedin.com/in/andres-menutti)
