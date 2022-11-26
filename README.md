@@ -42,6 +42,7 @@
 + Ruby
 + Ruby on Rails
 + PostgreSQL
++ Rspec (for testing)
 
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -91,6 +92,7 @@ To get a local copy up and running follow these simple example steps.
 - Ruby: 2.7.0
 - Rails:
 - PostgreSQL
+- Rspec
 
 ### Install <a name="install"></a>
 
@@ -127,7 +129,7 @@ bundle install
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-- Deployed to Heroku
+- Deployed to Render.com
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
