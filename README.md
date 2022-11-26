@@ -142,6 +142,22 @@ bundle install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- Add a search bar
+- Add a profile page
+- Add a notifications page
+- Add a share feature
+- Add a follow feature
+- Add a sign up feature
+- Add a sign in feature
+- Add a sign out feature
+- Add a sign in with Discord feature
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
