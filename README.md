@@ -5,7 +5,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Welcome this is Blog App Rails</b></h3>
+  <h2><b>Welcome this is Blog App Rails</b></h2>
 
 </div>
 
@@ -85,7 +85,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup <a name="setup"></a>
 
-- Clone the repository with `git clone
+- Clone the repository with `git clone git@github.com:andym80/Blog-app-Rails.git`
+
+  using your terminal or command line.
 
 ### Prerequisites <a name="prerequisites"></a>
 
@@ -165,7 +167,7 @@ bundle install
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/andym80/Blog-app-Rails/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
