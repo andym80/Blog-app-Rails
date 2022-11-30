@@ -1,17 +1,17 @@
-require 'posts_controller'
+require 'rails_helper'
 
-RSpec.describe PostsController, type: :controller do
+RSpec.describe PostsController, type: :request do
 
 	describe "GET #index" do
 		it "returns http success" do
-			get :index
+			get posts_path
 			expect(response).to have_http_status(:success)
 		end
 	end
 
 	describe "GET #show" do
 		it "returns http success" do
-			get :show
+			get users_path(1)
 			expect(response).to have_http_status(:success)
 		end
 	end
