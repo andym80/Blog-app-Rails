@@ -126,7 +126,7 @@ bundle install
 - To run tests, run:
 
 ```
-   rpsec --format documentation
+   rspec --format documentation
 ```
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
