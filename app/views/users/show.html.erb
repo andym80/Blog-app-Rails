@@ -1,1 +1,7 @@
-<h1>this is for all Users</h1>
+<div class="user">
+  <h1><%= @user.name %></h1>
+  <p>Number of posts: <%= @user.posts.count %></p>
+<div>
+<div> <%= link_to "Back", users_path %> </div>
+<div> <%= link_to "Users", users_path %> </div>
+<div> <%= link_to "Profile", user_path(@user) %> </div>

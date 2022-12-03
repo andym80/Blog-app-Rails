@@ -15,8 +15,10 @@ RSpec.describe UsersController, type: :request do
     end
   end
 
-  it "the body contains the user's name" do
-    get users_path(1)
-    expect(response.body).to include('This is for a single User')
+  describe 'GET #posts' do
+    it 'returns http success' do
+      get posts_path(1)
+      expect(response).to have_http_status(:success)
+    end
   end
 end
