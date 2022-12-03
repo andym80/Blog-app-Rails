@@ -1,28 +1,13 @@
-<h2> ALL USERS <h2>
-<ul class="users-list">
-  <% @users.each do |user| %>
+<div class="user-container container">
+<% @users.each do |user| %>
+
+<ul class="users-list ">
 	<li>
-	  <%= image_tag("profile-siluet.png",:size => "100x100") %>
+   <%= image_tag("profile-siluet.png",:size => "70x70") %>
 	  <%= link_to user.name, user_path(user) %>
-	  <p>Number of posts: <%= user.posts.count %></p>
+	  <p class="post-count" > Number of posts: <%= user.posts.count %></p>
 	</li>
 </ul>
-<div class="bio">
-  <p> <%= user.bio %> lorem ipsum dolor sit amet, consectetur adipiscing
-   elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-
-<div class="post-box">
-  <p> <%= user.posts.count %> posts </p>
-  <p> <%= user.comments.count %> comments </p>
-  <p> <%= user.likes.count %> likes </p>
-</div>
 
 <% end %>
 
