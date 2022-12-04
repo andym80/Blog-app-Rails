@@ -1,0 +1,21 @@
+<div class = 'posts-container'>
+<% @posts.each do |post| %>
+<div class = 'post-info'>
+<span class='post-title'> Post #<%= post.id %> </span>
+  <%post.title%>
+  <% post.text%>
+<div class = 'counter-comment-like>
+comments: <%= post.comments.length %> likes: <%= post.likes.length %> likes <% post.likes.length%>
+</div>
+<div class = 'comments-section'>
+<% post.comments.each do |comment| %>
+<div class = 'comment-info'>
+<span class='comment-title'> Comment #<%= comment.id %> </span>
+<% comment.text%>
+</div>
+<% end %>
+</div>
+</div>
+<% end %>
+<button class ='Pagination'> Pagination </button>
+</div>
