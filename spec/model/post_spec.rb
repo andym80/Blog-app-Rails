@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
+
   describe 'title must not be blank' do
     it 'should not be blank' do
       post = Post.new(title: 'Hello')
