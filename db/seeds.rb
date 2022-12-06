@@ -128,7 +128,7 @@ Post.create(
   likes_counter: 0,
 )
 
-Comment.create(author: ella_user, post: scott_user.posts[2], text: 'Hi Scott!')
+
 Comment.create(author: alicia_user, post: scott_user.posts[2], text: 'Hi Scott!')
 Comment.create(author: emine_user, post: scott_user.posts[2], text: 'Hi Scott!')
 Comment.create(author: maxime_user, post: scott_user.posts[2], text: 'Hi Scott!')

@@ -19,6 +19,14 @@ class PostsController < ApplicationController
     redirect_to :backwards
   end
 
+  # get a user's posts
+  # GET /users/1/posts
+  # GET /users/1/posts.json
+  def posts
+    @user = User.find(params[:id])
+    @posts = @user.posts
+  end
+
   private
 
   def comment_params

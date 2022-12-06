@@ -1,9 +1,9 @@
 <div class="user-container container">
 <% @users.each do |user| %>
 
-<ul class="users-list ">
+<ul id=<%= "user_id_#{user.id}" %> class="users-list ">
 	<li>
-   <%= image_tag("profile-siluet.png",:size => "70x70") %>
+   <%= image_tag(user.photo,:size => "70x70") %>
 	  <%= link_to user.name, user_path(user) %>
 	  <p class="post-count" > Number of posts: <%= user.posts.count %></p>
 	</li>

@@ -29,12 +29,5 @@ RSpec.describe 'show all users', type: :feature do
       end
     end
 
-    it "When I click on a user, I am redirected to that user's show page." do
-      users.each do |user|
-        page.find('a', text: user.name).click
-        expect(current_path).to eq user_path user
-        visit users_path
-      end
-    end
   end
 end
