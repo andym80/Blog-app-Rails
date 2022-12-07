@@ -13,7 +13,7 @@ RSpec.describe 'show all users', type: :feature do
 
     it 'I can see the profile picture for each user.' do
       users.each do |user|
-      expect(page).to have_css("img[src*='#{user.photo}']")
+        expect(page).to have_css("img[src*='#{user.photo}']")
       end
     end
 
