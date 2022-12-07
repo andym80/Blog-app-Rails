@@ -17,7 +17,7 @@ RSpec.describe UsersController, type: :request do
 
   describe 'GET #posts' do
     it 'returns http success' do
-      get posts_path(1)
+      get users_path(1)
       expect(response).to have_http_status(:success)
     end
   end

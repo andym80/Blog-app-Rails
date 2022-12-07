@@ -2,6 +2,18 @@
   <h1><%= @user.name %></h1>
   <p>Number of posts: <%= @user.posts.count %></p>
 <div>
+<div>
+  <h2>Posts</h2>
+  <div class="posts">
+    <% @user.posts.each do |post| %>
+      <div class="post">
+        <h3><%= post.title %></h3>
+        <p><%= post.text %></p>
+        <p>Comments: <%= post.comments_counter %></p>
+        <p>Likes: <%= post.likes_counter%></p>
+      </div>
+    <% end %>
+  </div>
 <div> <%= link_to "Back", users_path %> </div>
 <div> <%= link_to "Users", users_path %> </div>
 <div> <%= link_to "Profile", user_path(@user) %> </div>
