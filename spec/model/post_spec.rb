@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Post, type: :model do
+RSpec.describe Post, type: :model do # rubocop:disable Metrics/BlockLength
   describe 'title must not be blank' do
     it 'should not be blank' do
       post = Post.new(title: 'Hello')
