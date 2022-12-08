@@ -67,8 +67,8 @@ end
 group :development, :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
-  gem 'capybara'
   gem 'cancancan'
+  gem 'capybara'
   gem 'database_cleaner-active_record'
   gem 'jquery-rails'
   gem 'rails-controller-testing'
