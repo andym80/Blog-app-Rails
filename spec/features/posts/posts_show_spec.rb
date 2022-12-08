@@ -44,7 +44,7 @@ describe 'show first post complete', type: :feature do # rubocop:disable Metrics
       expect(response).to have_http_status(:success)
     end
   end
-  context 'visit /users/user_id/posts/post_id' do
+  context 'visit /users/user_id/posts/post_id' do # rubocop:disable Metrics/BlockLength
     let(:post) do
       Post.first
     end
