@@ -62,17 +62,11 @@ RSpec.describe 'Posts Index', type: :request do # rubocop:disable Metrics/BlockL
       expect(response).to have_http_status(:success)
     end
   end
-
-  describe 'GET #users' do
-    it 'returns http success' do
-      get users_path(1)
-      expect(response).to have_http_status(:success)
-    end
-  end
 end
-# it 'can see which users have written posts' do
-#   expect(page).to have_content('post.user.name')
-# end
+  describe  'GET #users'
+    it 'can see which users have written posts' do
+    expect(page).to have_content('post.user.name')
+  end
 
 # it 'can see how many comments each post has' do
 #   expect(page).to have_content('post.comments_counter')
