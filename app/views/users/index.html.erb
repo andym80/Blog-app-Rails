@@ -1,0 +1,14 @@
+<div class="user-container container">
+<% @users.each do |user| %>
+
+<ul id=<%= "user_id_#{user.id}" %> class="users-list ">
+	<li>
+ <img class='profile-index-photo' src='<%= user.photo %>' alt="<%= user.name %>'s profile picture" />
+	  <%= link_to user.name, user_path(user) %>
+	  <p class="post-count" > Number of posts: <%= user.posts.count %></p>
+	</li>
+</ul>
+
+<% end %>
+
+
