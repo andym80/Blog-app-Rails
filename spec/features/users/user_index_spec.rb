@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'capybara'
+require_relative '../config/environment'
 
 RSpec.describe 'show all users', type: :feature do
   let!(:users) do

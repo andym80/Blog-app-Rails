@@ -1,7 +1,8 @@
 require 'rails_helper'
+require relative '../config/environment'
 
 RSpec.describe 'Posts Index', type: :request do # rubocop:disable Metrics/BlockLength
-  before(:each) do # rubocop:disable Metrics/BlockLength
+  before(:each) do
     @user = User.create(
       name: 'Andy Menutti',
       bio: 'Software Engineer / Sr.Sound Designer',
@@ -62,58 +63,100 @@ RSpec.describe 'Posts Index', type: :request do # rubocop:disable Metrics/BlockL
       expect(response).to have_http_status(:success)
     end
   end
-end
-  describe  'GET #users'
-    it 'can see which users have written posts' do
-    expect(page).to have_content('post.user.name')
+
+  describe 'GET #index' do
+    it'you can see the users profile picture.'
+    expect(page).to have_content('user.photo')
   end
 
-# it 'can see how many comments each post has' do
-#   expect(page).to have_content('post.comments_counter')
-# end
+  describe 'GET #index' do
+    it 'you can see the users username'
+    expect(page).to have_content('user.name')
+  end
 
-# it 'can see how many likes each post has' do
-#   expect(page).to have_content('post.likes_counter')
-# end
+  describe 'GET #index' do
+    it 'you can see the number of posts the user has written'
+    expect(page).to have_content('user.post_counter')
+  end
 
-# it 'can see the post content' do
-#   expect(page).to have_content('post.content')
-# end
+  describe 'GET #index' do
+    it 'you can see a posts title'
+    expect(page).to have_content('post.title')
+  end
 
-# it 'can see the username of each commentor' do
-#   post.comment.each do |comment|
-#   expect(page).to have_content('comment.user.name')
-#   end
-# end
+  describe 'GET #index' do
+    it ' you can see some of the posts body'
+    expect(page).to have_content('post.text')
+  end
 
-# it 'that asserts you can see how many comments a post has' do
-#   expect(page).to have_content('post.comments_counter')
-# end
+  describe 'GET #index' do
+    it 'you can see the first comments on a post'
+    expect(page).to have_content('post.comment.first')
+  end
 
-# it 'can see the first comments on a post.' do
-#   expect(page).to have_content('post.comment.first')
-# end
+  describe 'GET #index' do
+    it 'can see how many likes each post has' do
+      expect(page).to have_content('post.likes_counter')
+    end
+  end
 
-# it 'can see the content of each comment left' do
-#   post.comment.each do |comment|
-#   expect(page).to have_content('comment.text')
-#   end
-# end
+  describe 'GET #index' do
+    it 'can see the post content' do
+      expect(page).to have_content('post.content')
+    end
+  end
 
-# it 'can see the number of likes each comment has' do
-#   post.comment.each do |comment|
-#   expect(page).to have_content('comment.likes_counter')
-#   end
-# end
+  describe 'GET #index' do
+    it 'can see the username of each commentor' do
+      post.comment.each do |_comment|
+        expect(page).to have_content('comment.user.name')
+      end
+    end
+  end
 
-# it 'can see the number of post with likes' do
-#   expect(page).to have_content('post.likes_counter')
-# end
+  describe 'GET #index' do
+    it 'that asserts you can see how many comments a post has' do
+      expect(page).to have_content('post.comments_counter')
+    end
+  end
 
-# it 'can see a section for pagination if there are more posts than fit on the view' do
-#   expect(page).to have_content('post.pagination')
-# end
+  describe 'GET #index' do
+    it 'can see the first comments on a post.' do
+      expect(page).to have_content('post.comment.first')
+    end
+  end
 
-# it 'redirects to the posts show page when you click on a post' do
-#   expect(page).to have_content('post_path')
-# end
+  describe 'GET #index' do
+    it 'can see the content of each comment left' do
+      post.comment.each do |_comment|
+        expect(page).to have_content('comment.text')
+      end
+    end
+  end
+
+  describe 'GET #index' do
+    it 'can see the number of likes each comment has' do
+      post.comment.each do |_comment|
+        expect(page).to have_content('comment.likes_counter')
+      end
+    end
+  end
+
+  describe 'GET #index' do
+    it 'can see the number of post with likes' do
+      expect(page).to have_content('post.likes_counter')
+    end
+  end
+
+  describe 'GET #index' do
+    it 'can see a section for pagination if there are more posts than fit on the view' do
+      expect(page).to have_content('post.pagination')
+    end
+  end
+
+  describe 'GET #index' do
+    it 'redirects to the posts show page when you click on a post' do
+      expect(page).to have_content('post_path')
+    end
+  end
+end

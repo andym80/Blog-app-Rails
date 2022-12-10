@@ -1,6 +1,6 @@
 require	'rails_helper'
 
-RSpec.describe Like, type: :model do # rubocop:disable Metrics/BlockLength
+RSpec.describe Like, type: :model do
   describe 'author_id must be an integer' do
     it 'should be an integer' do
       like = Like.new(author_id: 1)

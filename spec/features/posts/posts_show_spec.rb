@@ -1,4 +1,4 @@
-require 'rails_helper'
+require_relative '../config/environment'
 
 RSpec.describe UsersController, type: :request do
   describe 'GET #index' do
@@ -44,23 +44,23 @@ describe 'show first post complete', type: :feature do # rubocop:disable Metrics
       expect(response).to have_http_status(:success)
     end
   end
-  context 'visit /users/user_id/posts/post_id' do # rubocop:disable Metrics/BlockLength
+  context 'visit /users/user_id/posts/post_id' do
     let(:post) do
       Post.first
     end
-    before(:example) { visit "/users/#{post.user.id}/posts/#{post.id}" }
+    before(:example) { visit '/users/#{post.user.id}/posts/#{post.id}' }
 
-    it "can see the post's title." do
+    it 'can see the posts title.' do
       expect(page).to have_content(post.title)
     end
     it 'can see who wrote the post.' do
       expect(page).to have_content(post.user.name)
     end
     it 'can see how many comments it has.' do
-      expect(page).to have_content("Comments: #{post.CommentsCounter}")
+      expect(page).to have_content('Comments: #{post.CommentsCounter}')
     end
     it 'can see how many likes it has.' do
-      expect(page).to have_content("Likes: #{post.LikesCounter}")
+      expect(page).to have_content('Likes: #{post.LikesCounter}')
     end
     it 'can see the post body.' do
       expect(page).to have_content(post.text.slice(0, 50))
