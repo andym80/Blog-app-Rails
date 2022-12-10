@@ -49,7 +49,7 @@ describe 'show first post complete', type: :feature do # rubocop:disable Metrics
       Post.first
     end
 
-    before(:example) { visit '/users/#{post.user.id}/posts/#{post.id}' }
+    before(:example) { visit "/users/#{post.user.id}/posts/#{post.id}" }
 
     it 'can see the posts title.' do
       expect(page).to have_content(post.title)
@@ -60,11 +60,11 @@ describe 'show first post complete', type: :feature do # rubocop:disable Metrics
     end
 
     it 'can see how many comments it has.' do
-      expect(page).to have_content('Comments: #{post.CommentsCounter}')
+      expect(page).to have_content("Comments: #{post.CommentsCounter}")
     end
 
     it 'can see how many likes it has.' do
-      expect(page).to have_content('Likes: #{post.LikesCounter}')
+      expect(page).to have_content("Likes: #{post.LikesCounter}")
     end
 
     it 'can see the post body.' do

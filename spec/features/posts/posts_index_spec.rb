@@ -65,7 +65,7 @@ RSpec.describe 'Posts Index', type: :request do # rubocop:disable Metrics/BlockL
   end
 
   describe 'GET #index' do
-    it'you can see the users profile picture.'
+    it 'you can see the users profile picture.'
     expect(page).to have_content('user.photo')
   end
 

@@ -48,6 +48,5 @@ RSpec.describe 'show all users', type: :feature do
       it 'that redirects to the users show page when you click on a user'
       expect(page).to have_content('user_path')
     end
-
   end
 end
