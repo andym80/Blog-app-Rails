@@ -1,5 +1,5 @@
 require 'rails_helper'
-require relative '../config/environment'
+require_relative '../config/environment'
 
 RSpec.describe 'Posts Index', type: :request do # rubocop:disable Metrics/BlockLength
   before(:each) do

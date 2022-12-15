@@ -1,0 +1,15 @@
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/home/andy/.rbenv/versions/3.0.1/bin/ruby -I /home/andy/.rbenv/versions/3.0.1/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-fi0qf1 sitelibdir\=./.gem.20221214-40385-fi0qf1 clean
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-fi0qf1 sitelibdir\=./.gem.20221214-40385-fi0qf1
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-fi0qf1 sitelibdir\=./.gem.20221214-40385-fi0qf1 install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20221214-40385-fi0qf1/skiptrace/internal

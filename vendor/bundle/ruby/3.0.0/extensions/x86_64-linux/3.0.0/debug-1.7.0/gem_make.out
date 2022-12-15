@@ -1,0 +1,16 @@
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/debug-1.7.0/ext/debug
+/home/andy/.rbenv/versions/3.0.1/bin/ruby -I /home/andy/.rbenv/versions/3.0.1/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-xzzb6u sitelibdir\=./.gem.20221214-40385-xzzb6u clean
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-xzzb6u sitelibdir\=./.gem.20221214-40385-xzzb6u
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.0.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221214-40385-xzzb6u sitelibdir\=./.gem.20221214-40385-xzzb6u install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20221214-40385-xzzb6u/debug

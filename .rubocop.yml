@@ -26,7 +26,6 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   Max: 50
   AlloedMethods: ['describe']
-# Metrics/MethodLength:
 
 Style/Documentation:
   Enabled: false

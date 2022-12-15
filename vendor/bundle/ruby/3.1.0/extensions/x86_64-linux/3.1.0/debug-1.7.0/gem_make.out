@@ -1,0 +1,16 @@
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+/home/andy/.rbenv/versions/3.1.2/bin/ruby -I /home/andy/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221214-60772-kwsx5x.rb extconf.rb
+creating Makefile
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/andy/Repos/Microverse/module 5/week 1/Blog-app-Rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20221214-60772-xcbjbz/debug

@@ -7,5 +7,5 @@
       end
     end
     # Defines the root path route ("/")
-    # root "articles#index"
+    root "users#index"
   end
